@@ -154,16 +154,18 @@
             var newFriend = {
                 friendName: $("#name").val().trim(),
                 friendPic: $("#pic").val().trim(),
-                friendQuestion2: $("#q1-answer").val().trim(),
-                friendQuestion3: $("#q3-answer").val().trim(),
-                friendQuestion4: $("#q4-answer").val().trim(),
-                friendQuestion5: $("#q5-answer").val().trim(),
-                friendQuestion6: $("#q6-answer").val().trim(),
-                friendQuestion7: $("#q7-answer").val().trim(),
-                friendQuestion8: $("#q8-answer").val().trim(),
-                friendQuestion9: $("#q9-answer").val().trim(),
-                friendQuestion10: $("#q10-answer").val().trim()
-
+                scores: [
+                    $("#q1-answer").val().trim(),
+                    $("#q2-answer").val().trim(),
+                    $("#q3-answer").val().trim(),
+                    $("#q4-answer").val().trim(),
+                    $("#q5-answer").val().trim(),
+                    $("#q6-answer").val().trim(),
+                    $("#q7-answer").val().trim(),
+                    $("#q8-answer").val().trim(),
+                    $("#q9-answer").val().trim(),
+                    $("#q10-answer").val().trim(),
+                ]
             };
 
 
@@ -178,18 +180,10 @@
             $.post("/api/friends", newFriend,
                 function (data) {
                     if (data) {
-                        alert("Yay! You are officially booked!");
-                    }
-
-                    // If a table is available... tell user they on the waiting list.
-                    else {
-                        alert("Sorry you are on the wait list");
+                        alert("Yay! You are have been added to the friend bank!");
                     }
 
                     // Clear the form when submitting
-
-
-
                     $("#name").val("");
                     $("#pic").val("");
                     $("#q1-answer").val("");
