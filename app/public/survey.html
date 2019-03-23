@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>FRIEND FINDER</title>
+</head>
+
+<body>
+    <a href="/">
+        <button class="home">home</button>
+    </a>
+    <h2>Survey Questions</h2>
+    <h3>About You</h3>
+    <form>
+        <div>
+            <h2>Name (Required)</h2>
+            <input type="text" id="name">
+            <br><br>
+
+            <h2>Link to Photo Image (Required)</h2>
+            <input type="text" id="pic">
+            <br><br>
+
+            <h2>Question 1</h2>
+            <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+            <select id="q1-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 2</h2>
+            <p>Generally speaking, you rely more on your experience than your imagination.</p>
+            <select id="q2-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 3</h2>
+            <p> You find it easy to stay relaxed and focused even when there is some pressure.</p>
+            <select id="q3-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 4</h2>
+            <p>You rarely do something just out of sheer curiosity.</p>
+            <select id="q4-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 5</h2>
+            <p>People can rarely upset you.</p>
+            <select id="q5-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 6</h2>
+            <p> It is often difficult for you to relate to other people’s feelings.</p>
+            <select id="q6-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 7</h2>
+            <p> In a discussion, truth should be more important than people’s sensitivities.</p>
+            <select id="q7-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2> Question 8 </h2>
+            <p> You rarely get carried away by fantasies and ideas.</p>
+            <select id="q8-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 9</h2>
+            <p> You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                not.</p>
+            <select id="q9-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+
+            <h2>Question 10</h2>
+            <p>You feel more energetic after spending time with a group of people.</p>
+            <select id="q10-answer" class="q-answers">
+                <option value=1>1 strongly disagree</option>
+                <option value=2>2 somewhat disagree</option>
+                <option value=3>3 unsure</option>
+                <option value=4>4 somewhat agree</option>
+                <option value=5>5 strongly agree</option>
+            </select>
+            <br><br>
+            <button type="submit" class="submit">Submit</button>
+    </form>
+    </div>
+
+    <footer class="footer">
+        <div><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Clawrence005/FriendFinder">GitHub
+                Repo</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Here we grab the form elements
+            var newFriend = {
+                friendName: $("#name").val().trim(),
+                friendPic: $("#pic").val().trim(),
+                friendQuestion2: $("#q1-answer").val().trim(),
+                friendQuestion3: $("#q3-answer").val().trim(),
+                friendQuestion4: $("#q4-answer").val().trim(),
+                friendQuestion5: $("#q5-answer").val().trim(),
+                friendQuestion6: $("#q6-answer").val().trim(),
+                friendQuestion7: $("#q7-answer").val().trim(),
+                friendQuestion8: $("#q8-answer").val().trim(),
+                friendQuestion9: $("#q9-answer").val().trim(),
+                friendQuestion10: $("#q10-answer").val().trim()
+
+            };
+
+
+            // This line is the magic. It"s very similar to the standard ajax function we used.
+            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+            // depending on if a tables is available or not.
+
+
+            // If a table is available... tell user they are booked.
+
+            $.post("/api/friends", newFriend,
+                function (data) {
+                    if (data) {
+                        alert("Yay! You are officially booked!");
+                    }
+
+                    // If a table is available... tell user they on the waiting list.
+                    else {
+                        alert("Sorry you are on the wait list");
+                    }
+
+                    // Clear the form when submitting
+
+
+
+                    $("#name").val("");
+                    $("#pic").val("");
+                    $("#q1-answer").val("");
+                    $("#q2-answer").val("");
+                    $("#q3-answer").val("");
+                    $("#q4-answer").val("");
+                    $("#q5-answer").val("");
+                    $("#q6-answer").val("");
+                    $("#q7-answer").val("");
+                    $("#q8-answer").val("");
+                    $("#q9-answer").val("");
+                    $("#q10-answer").val("");
+
+                });
+            console.log(newFriend);
+        });
+
+
+
+    </script>
+</body>
+
+</html>
