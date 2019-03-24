@@ -1,19 +1,16 @@
 {
-  "name": "friendfinder",
+  "name": "app",
   "version": "1.0.0",
-  "description": "a friend finder app",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Clawrence005/FriendFinder.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Clawrence005/FriendFinder/issues"
-  },
-  "homepage": "https://github.com/Clawrence005/FriendFinder#readme"
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  }
 }
