@@ -6,145 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery.js"></script>
+
     <title>FRIEND FINDER</title>
 </head>
 
 <body>
-    <a href="/">
-        <button class="home">home</button>
-    </a>
-    <h2>Survey Questions</h2>
-    <h3>About You</h3>
-    <form>
-        <div>
-            <h2>Name (Required)</h2>
-            <input type="text" id="name">
-            <br><br>
+    <div class="container">
+        <a href="/">
+            <button class="home">home</button>
+        </a>
+        <h2>Survey Questions</h2>
+        <h3>About You</h3>
+        <form>
+            <div>
+                <h2>Name (Required)</h2>
+                <input type="text" id="name">
+                <br><br>
 
-            <h2>Link to Photo Image (Required)</h2>
-            <input type="text" id="pic">
-            <br><br>
+                <h2>Link to Photo Image (Required)</h2>
+                <input type="text" id="pic">
+                <br><br>
 
-            <h2>Question 1</h2>
-            <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-            <select id="q1-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 1</h2>
+                <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+                <select id="q1-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 2</h2>
-            <p>Generally speaking, you rely more on your experience than your imagination.</p>
-            <select id="q2-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 2</h2>
+                <p>Generally speaking, you rely more on your experience than your imagination.</p>
+                <select id="q2-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 3</h2>
-            <p> You find it easy to stay relaxed and focused even when there is some pressure.</p>
-            <select id="q3-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 3</h2>
+                <p> You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                <select id="q3-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 4</h2>
-            <p>You rarely do something just out of sheer curiosity.</p>
-            <select id="q4-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 4</h2>
+                <p>You rarely do something just out of sheer curiosity.</p>
+                <select id="q4-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 5</h2>
-            <p>People can rarely upset you.</p>
-            <select id="q5-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 5</h2>
+                <p>People can rarely upset you.</p>
+                <select id="q5-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 6</h2>
-            <p> It is often difficult for you to relate to other people’s feelings.</p>
-            <select id="q6-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 6</h2>
+                <p> It is often difficult for you to relate to other people’s feelings.</p>
+                <select id="q6-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 7</h2>
-            <p> In a discussion, truth should be more important than people’s sensitivities.</p>
-            <select id="q7-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 7</h2>
+                <p> In a discussion, truth should be more important than people’s sensitivities.</p>
+                <select id="q7-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2> Question 8 </h2>
-            <p> You rarely get carried away by fantasies and ideas.</p>
-            <select id="q8-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2> Question 8 </h2>
+                <p> You rarely get carried away by fantasies and ideas.</p>
+                <select id="q8-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 9</h2>
-            <p> You think that everyone’s views should be respected regardless of whether they are supported by facts or
-                not.</p>
-            <select id="q9-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
+                <h2>Question 9</h2>
+                <p> You think that everyone’s views should be respected regardless of whether they are supported by
+                    facts or
+                    not.</p>
+                <select id="q9-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
 
-            <h2>Question 10</h2>
-            <p>You feel more energetic after spending time with a group of people.</p>
-            <select id="q10-answer" class="q-answers">
-                <option value=1>1 strongly disagree</option>
-                <option value=2>2 somewhat disagree</option>
-                <option value=3>3 unsure</option>
-                <option value=4>4 somewhat agree</option>
-                <option value=5>5 strongly agree</option>
-            </select>
-            <br><br>
-            <button type="submit" class="submit">Submit</button>
-    </form>
+                <h2>Question 10</h2>
+                <p>You feel more energetic after spending time with a group of people.</p>
+                <select id="q10-answer" class="q-answers">
+                    <option value=1>1 strongly disagree</option>
+                    <option value=2>2 somewhat disagree</option>
+                    <option value=3>3 unsure</option>
+                    <option value=4>4 somewhat agree</option>
+                    <option value=5>5 strongly agree</option>
+                </select>
+                <br><br>
+                <button type="submit" class="submit">Submit</button>
+
+            </div>
+        </form>
+        <!-- </div> -->
+        <div class="modal fade" id="my-friends-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <strong>We found a new friend for you....</strong>
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body ">
+                        <h4 id="my-friends-name"></h4>
+                        <div class="text-center">
+                            <img class="img-fluid" id="my-friends-photo" src="#">
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
         <div><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Clawrence005/FriendFinder">GitHub
                 Repo</a>
         </div>
-    </footer>
 
+    </footer>
     <script type="text/javascript">
 
         $(".submit").on("click", function (event) {
@@ -179,8 +212,14 @@
 
             $.post("/api/friends", newFriend,
                 function (data) {
+                    console.log(data);
+
                     if (data) {
-                        alert("Yay! You are have been added to the friend bank!");
+                        // alert("Yay! You are have been added to the friend bank!");
+                        // alert("your match is :" + data.name + "\n" + data.photo);
+                        $("#my-friends-name").text(data.name);
+                        $("#my-friends-photo").attr("src", data.photo);
+                        $("#my-friends-modal").modal('toggle');
                     }
 
                     // Clear the form when submitting
@@ -204,6 +243,8 @@
 
 
     </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </body>
 
 </html>
