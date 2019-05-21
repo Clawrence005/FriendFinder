@@ -33,7 +33,7 @@ var friends = [
     },
     {
         "name": "Liz Lemon",
-        "photo": "https://images.pexels.com/photos/871830/pexels-photo-871830.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "photo": "https://i.gifer.com/2WbE.gif",
         "scores": [
             5,
             1,
@@ -48,8 +48,8 @@ var friends = [
         ]
     },
     {
-        "name": "Jenna Maroney",
-        "photo": "",
+        "name": "Tina Belcher",
+        "photo": "https://www.geek.com/wp-content/uploads/2017/08/bobs-burgers-tina-belcher-crush-070617-625x352.jpg",
         "scores": [
             5,
             1,
@@ -65,7 +65,7 @@ var friends = [
     },
     {
         "name": "Titus Andromedon",
-        "photo": "https://images.pexels.com/photos/871830/pexels-photo-871830.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "photo": "https://media0.giphy.com/media/3oKIPl81Xpq0epGtoY/giphy.gif",
         "scores": [
             5,
             1,
@@ -78,10 +78,42 @@ var friends = [
             4,
             1
         ]
+    }, {
+        "name": "Andy Dwyer",
+        // "photo": "https://imgix.bustle.com/rehost/2016/9/13/90111dc4-0e9b-45ae-8f2e-42199f9eb437.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70",
+        "photo": "https://media.giphy.com/media/Nqy4BNqxEDKO4/giphy.gif",
+        "scores": [
+            5,
+            1,
+            4,
+            2,
+            5,
+            1,
+            1,
+            5,
+            2,
+            1
+        ]
     },
     {
-        "name": "Beyonce",
-        "photo": "https://images.pexels.com/photos/871830/pexels-photo-871830.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "name": "April Ludgate",
+        "photo": "http://40.media.tumblr.com/19ba64461c98b817759c17df637432f2/tumblr_o1anws4GeV1u4l63jo1_500.png",
+        "scores": [
+            5,
+            1,
+            4,
+            2,
+            5,
+            1,
+            1,
+            5,
+            2,
+            1
+        ]
+    },
+    {
+        "name": "Leslie Knope",
+        "photo": "https://amp.businessinsider.com/images/5824aa9046e27a1c008b5eec-750-563.jpg",
         "scores": [
             5,
             1,
@@ -97,49 +129,3 @@ var friends = [
     },
 ]
 module.exports = friends;
-
-// var arr1 = [5, 1, 3, 4, 4, 1, 3, 5, 4, 3];
-// // var arr2 = [1, 5, 3, 4, 2, 1, 3, 5, 1, 3];
-// //function that consoles the friends var scores
-// var friendsToCompare = function (newUserFriend, friends) {
-//     var runningDiffArr = [];
-//     for (i = 0; i < friends.length; i++) {
-
-//         runningDiffArr.push(diffNum(newUserFriend, friend[i]));
-//     }
-//     //
-//     return friend[0];
-//     //
-// }
-// // friendsToCompare();
-
-// //function using two arrays passed in that shows number difference between arrays
-// function diffNum(user, friend) {
-//     var totalDiff = 0;
-//     for (i = 0; i < user.length; i++) {
-//         var absoluteResult = Math.abs(user.scores[i] - friend.scores[i]);
-//         totalDiff += absoluteResult;
-
-//     } console.log(totalDiff);
-
-//     return totalDiff;
-// }
-
-// // console.log("diffNum(arr1, arr2): " + diffNum(arr1, arr2));
-// module.exports = friendsToCompare();
-// // module.exports = diffNum(user, friend);
-
-// `
-// im not sure how to iterate through the below scores and check which matches the users
-// console logs:
-// :FriendFinder create$ node algorerhythm.js 
-// [ 5, 1, 4, 4, 3, 1, 2, 5, 4, 1 ]
-// [ 5, 1, 4, 1, 5, 3, 1, 5, 4, 1 ]
-// [ 5, 1, 4, 4, 4, 1, 3, 2, 4, 1 ]
-// [ 5, 1, 4, 1, 5, 1, 3, 1, 4, 5 ]
-// [ 5, 1, 4, 4, 5, 1, 1, 5, 4, 1 ]
-// [ 5, 1, 3, 4, 4, 1, 3, 5, 4, 3 ]
-// diffArr(arr1, arr2): 4,4,0,0,2,0,0,0,3,0
-// diffNum(arr1, arr2): 13 
-// `
-

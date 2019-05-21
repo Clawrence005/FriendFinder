@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <!--nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/survey">Survey <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/">FriendFinder</a>
+
+            </div>
+        </div>
+    </nav>
+    <!--end of nav -->
     <div class="container">
         <a href="/">
             <button class="home">home</button>
@@ -217,18 +233,9 @@
                 ]
             };
 
-
-            // This line is the magic. It"s very similar to the standard ajax function we used.
-            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-            // depending on if a tables is available or not.
-
-
-            // If a table is available... tell user they are booked.
-
             $.post("/api/friends", newFriend,
                 function (data) {
-                    console.log(data);
+                    console.log("data", data);
 
                     if (data) {
                         // alert("Yay! You are have been added to the friend bank!");
@@ -237,7 +244,9 @@
                         $("#my-friends-photo").attr("src", data.photo);
                         $("#my-friends-modal").modal('toggle');
                     }
-
+                    //arr.indexOf(Math.max(...arr));
+                    // friendIndex = runningDiffArr.indexOf(Math.min(...runningDiffArr));
+                    //("friend match", friends[friendIndex]);
                     // Clear the form when submitting
                     $("#name").val("");
                     $("#pic").val("");
