@@ -14,7 +14,7 @@
 <body>
     <!--nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Navbar</a>
+        <a class="navbar-brand" href="/">FriendFinder</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -244,9 +244,7 @@
                         $("#my-friends-photo").attr("src", data.photo);
                         $("#my-friends-modal").modal('toggle');
                     }
-                    //arr.indexOf(Math.max(...arr));
-                    // friendIndex = runningDiffArr.indexOf(Math.min(...runningDiffArr));
-                    //("friend match", friends[friendIndex]);
+
                     // Clear the form when submitting
                     $("#name").val("");
                     $("#pic").val("");
@@ -264,8 +262,6 @@
                 });
             console.log(newFriend);
         });
-
-
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
