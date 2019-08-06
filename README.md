@@ -1,4 +1,4 @@
-### findaBestie ###
+# findaBestie 
 a friend finder app
 
 
