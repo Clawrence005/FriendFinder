@@ -9,7 +9,7 @@ Friend Finder is an application using HTML, CSS, Bootstrap and Javascript to com
 - HTML
 - CSS
 - Javascript
-- SVGs
+- Bootstrap
 
 ## [Click here to find your next best friend!](https://clawrence005.github.io/FriendFinder/) 
 
